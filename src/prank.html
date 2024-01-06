@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <link rel="stylesheet" href="../src/dist/output.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <title>Test Your Skills</title>
+</head>
+
+<body class="bg-gray-400">
+    <header></header>
+    <div class="flex flex-col">
+    <div class="Game start block cursor-pointer flex justify-center flex-col p-10"id="starts">
+        <a class="self-center p-5 text-xl text-white">Welcome to the game of Click the button as fast as you can. White the button keeps on changing places randomly !!!</a>
+        <a class="self-center p-5 text-xl text-white">Select the level from bellow</a>
+        <div class="flex flex-row gap-4 justify-center p-5">
+            <button id="level1" class="bg-blue-800 w-250px h-150px p-3 rounded-md text-white place-content-center font-bold" value="1000">Easy</button>
+            <button id="level2" class="bg-blue-800 w-250px h-150px p-3 rounded-md text-white place-content-center font-bold" value="500">Medium</button>
+            <button id="level3" class="bg-blue-800 w-250px h-150px p-3 rounded-md text-white place-content-center font-bold" value="100">Hard</button>
+        </div>
+        <div class="flex flex-row gap-4 justify-center">
+            <p class="basis-1/4"></p>
+            <a id="start" class="bg-blue-800 w-250px h-150px p-2 rounded-md text-white place-content-center font-bold">Start the Game !</a>
+            <p class="basis-1/4"></p>
+        </div>
+    </div>
+    <div>
+    <div class="absolute top-0 left-0 w-120px h-100px bg-red-500 text-white text-xl font-bold text-center cursor-pointer p-1 rounded-md hidden" id="button"> 
+            Click Me !
+    </div>/
+</div class="flex flex-col flex-wrap">
+    <div class="flex flex-row justify-center place-content-end p-5">
+        <a class="text-white font-bold">Score :&nbsp;</a>
+        <p id="count" class="text-white font-bold"> </p>
+    </div>
+</div>
+    <footer></footer>
+    <script type="text/javascript" src="/src/js/prank.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>
